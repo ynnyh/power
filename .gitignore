@@ -1,0 +1,79 @@
+# Java template #
+*.class
+.classpath
+.project
+.settings
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# IDEA Files #
+*.iml
+.idea
+*.iws
+
+# IntelliJ
+/out/
+.idea_modules/
+
+# Gradle template
+.gradle
+build/
+gradle-app.setting
+
+### Maven template
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn
+
+# Runtime Files #
+log/*
+logs/*
+*/logs
+*/logs/*
+log.*/*
+*/log.*/*
+
+# Windows Files #
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+
+node_modules
+*/node_modules
+*/node_modules/*
+idea
+*/idea
+*/idea/*
+
+*/rebel.xml
+
+*/webapp/*/dist/*
+
+*/*.json.gz
+
+package-lock.json
