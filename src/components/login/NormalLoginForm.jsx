@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col, Form, Icon, Input, Button, Checkbox } from 'antd';
+import { DatePicker, Row, Col, Form, Icon, Input, Button, Checkbox } from 'antd';
+
 import { createBrowserHistory } from 'history';
 
 import Origin from '../../modules/Origin';
@@ -43,7 +44,7 @@ class NormalLoginForm extends React.Component {
         if (isLoginPage) {
           if (flag) {
             console.log('>>> redirect to home...');
-            window.location.href = "http://localhost:8080/power/src/home.html";
+            window.location.href = "http://localhost:8080/esp-pms-webapp/src/home.html";
           }
         } else {
           if (flag) {
@@ -70,7 +71,7 @@ class NormalLoginForm extends React.Component {
             Cookie.setCookie('access_token', resp.access_token, expireDate);
 
             // 组件外部跳转
-            window.location.href = "http://localhost:8080/power/src/login.html";
+            window.location.href = "http://localhost:8080/esp-pms-webapp/src/login.html";
           } else {
             console.log('>>> xhr response status is not 200. Status is ' + xhr.status + '. And the response is: ' + xhr.response);
           }

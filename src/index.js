@@ -15,9 +15,9 @@ class App extends React.Component {
   componentWillMount () {
     // console.log('>> 开始进行组件渲染，此处处理业务逻辑...');
     if (!Cookie.isUserAuthenticated()) {
-      window.location.href = 'http://localhost:8080/power/src/login.html';
+      window.location.href = 'http://localhost:8080/esp-pms-webapp/src/login.html';
     } else {
-      window.location.href = 'http://localhost:8080/power/src/home.html';
+      window.location.href = 'http://localhost:8080/esp-pms-webapp/src/home.html';
     }
   }
   render () {

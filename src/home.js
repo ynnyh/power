@@ -28,7 +28,7 @@ class HomePage11 extends React.Component {
 
   componentWillMount () {
     if (!Cookie.isUserAuthenticated()) {
-      window.location.href = 'http://localhost:8080/power/src/login.html';
+      window.location.href = 'http://localhost:8080/esp-pms-webapp/src/login.html';
     }
   }
 
